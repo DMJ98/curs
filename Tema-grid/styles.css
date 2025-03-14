@@ -1,0 +1,224 @@
+* {
+    margin: 0px;
+    font-family: 'Karla';
+}
+
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+.grid-body {
+    background-color: var(--light-gray);
+}
+
+.grid-container {
+    display: block;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 74px 28px 58px 28px;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);   
+}
+
+.grid-description {
+    padding: 26px;
+    background-color: white;
+}
+
+.grid-description h1 {
+    font-size: 20px;
+    color: var(--cyan);
+    padding-bottom: 20px;
+}
+
+.grid-description h2 {
+    font-size: 15px;
+    color: var(--bright-yellow);
+    padding-bottom: 14px;
+}
+
+.grid-description p {
+    color: var(--grayish-blue);
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0 0 10px 0;
+}
+
+.grid-wrapper {
+    display: block;
+}
+
+.grid-price {
+    background-color: var(--cyan);
+}
+
+.grid-price h2 {
+    color: white;
+    font-size: 18px;
+    padding: 20px 20px 20px 26px;
+}
+
+.price {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 0 0 5px 26px;
+}
+
+.price span {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 0 8px 8px;
+    vertical-align: middle;
+}
+
+.price-access {
+    font-size: 16px;
+    color: white;
+    padding: 0 0 10px 26px;
+}
+
+.grid-price button {
+    color: white;
+    background-color: var(--bright-yellow);
+    border-radius: 4px;
+    border-color: var(--bright-yellow);
+    border: none;
+    border-width: 2px;
+    margin: 20px 24px 20px 24px;
+    padding: 14px 108px 14px 108px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+}
+
+.grid-contact {
+    background-color: hsla(180, 55%, 46%, 0.89);
+}
+
+.grid-contact h3 {
+    color: white;
+    padding: 20px 20px 20px 26px;
+}
+
+.grid-contact p {
+    color: var(--light-gray);
+    padding: 0px 20px 20px 26px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media (min-width: 900px) {
+
+    .grid-container {
+        display: block;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 88px 28px 88px 28px;
+        box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.25);   
+    }
+
+    .grid-description {
+        padding: 48px 0px 20px 34px;
+        background-color: white;
+    }
+
+    .grid-description h1 {
+        font-size: 32px;
+        color: var(--cyan);
+        padding: 0 0 20px 18px;
+    }
+
+    .grid-description h2 {
+        font-size: 24px;
+        color: var(--bright-yellow);
+        padding: 10px 0 18px 20px;
+    }
+
+    .grid-description p {
+        color: var(--grayish-blue);
+        font-size: 21px;
+        line-height: 26px;
+        padding: 0 14px 14px 18px; 
+    }
+    
+    .grid-price h2 {
+        color: white;
+        font-size: 18px;
+        padding: 20px 20px 20px 26px;
+    }
+
+    .grid-description .line-break {
+        color: var(--grayish-blue);
+        font-size: 21px;
+        line-height: 26px;
+        padding: 10px 0 10px 0;
+        text-align: left;
+        display: block;
+    }
+
+    .grid-wrapper {
+        display: flex;
+    }
+
+    .grid-price, .grid-contact {
+           flex: 1;
+    }
+
+    .grid-price h2 {
+        color: white;
+        font-size: 24px;
+        padding: 48px 20px 20px 50px;
+    }
+
+    .price {
+        color: white;
+        font-size: 44px;
+        font-weight: 700;
+        padding: 0 0 5px 48px;
+    }
+
+    .price span {
+        font-size: 18px;
+        font-weight: 300;
+        padding: 0 0 10px 8px;
+        margin: 8px 10px 18px 10px;
+    }
+
+    .price-access {
+        font-size: 20px;
+        color: white;
+        padding: 8px 0 10px 50px;
+        letter-spacing: 1px;
+    }
+
+    .grid-price button {
+        color: white;
+        background-color: var(--bright-yellow);
+        border-radius: 8x;
+        border-color: var(--bright-yellow);
+        border: none;
+        border-width: 2px;
+        margin: 38px 24px 18px 54px;
+        padding: 20px 128px 20px 128px;
+        font-size: 20px;
+        font-weight: 700;
+        box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
+    }
+
+    .grid-contact h3 {
+        color: white;
+        font-size: 24px;
+        padding: 48px 28px 8px 54px;
+    }
+
+    .grid-contact p {
+        color: var(--light-gray);
+        padding: 8px 24px 24px 28px;
+        margin: 8px 24px 24px 24px;
+        font-size: 20px;
+        line-height: 28px;
+    }
+}

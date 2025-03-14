@@ -1,0 +1,33 @@
+.page-title {
+    /* 
+    proprietati de css:
+    -color
+    -font size
+    border
+    etc
+    Unele proprietati permit doar un set anume de valori
+    */
+    font-size: 35px;
+    text-align: center; 
+    border-width: 8px;
+    border-color: black;
+    border-style:double;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 40px;
+    color: #FF495C;
+    background-color: pink;
+    padding: 2px;
+}
+/* 
+Clase:
+- intotdeauna cu litere mici
+- separam cu "-" cand avem mai multe cuvinte
+- nu punem spatiu
+- sa fie descriptiv pentru elementul pentru care este folosit
+*/
+
+.random-image{
+    width: 300px;
+    height: 100px;
+}

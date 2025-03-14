@@ -1,0 +1,169 @@
+* {
+    margin: 0px;
+    font-family: "Josefin Sans";
+}
+
+:root{
+
+    --desaturated-red: hsl(0, 36%, 70%);
+    --soft-red: hsl(0, 93%, 68%);
+    --dark-grayish-red: hsl(0, 6%, 24%);
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.page-logo{
+    margin-top: 28px;
+    margin-bottom: 28px;
+    margin-left: 32px;
+    width: 100px;
+}
+
+.page-hero-image{
+    height: 250px;
+    background-image: url("./assets/images/hero-desktop.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+
+.page-title{
+    margin-top: 48px;
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: 10px;
+    font-weight: 600;
+    color: var(--dark-grayish-red);
+}
+
+.page-title span{
+    font-weight: 300;
+    color: var(--desaturated-red);
+}
+
+.page-paragraph{
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 20px;
+    text-align: center;
+    color: var(--desaturated-red);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.stay-up-to-date-form{
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 28px;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.stay-up-to-date-form input{
+    font-size: 18px;
+    color: var(--desaturated-red);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 18px;
+    padding-right 18px;
+    border-radius: 24px;
+    border-width: 1px;
+    border-color: var(--desaturated-red);
+    border-style: solid;
+    width: calc(100% - 38px);
+   /* width: 100% 
+    box-sizing:border-box; */
+    
+}
+
+.stay-up-to-date-form button{
+    position: absolute;
+    right: 0px;
+    border:none;
+    background-color: var(--desaturated-red);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 28px;
+    padding-right: 26px;
+    border-radius: 24px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.desktop-page-logo{
+    display: none;
+}
+
+.stay-up-to-date-form button img{
+    margin-top: 2px;
+    }
+
+ @media (min-width: 800px){
+     .page-hero-image{
+        height: 350px;
+        width:500px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1000px){
+    .page-container{
+        display: flex;
+        flex-direction: row-reverse;
+        height: 100%;
+    }
+    .page-title{
+        text-align: left;
+        font-size: 54px;
+        margin-top: 160px;
+    }
+    .page-paragraph{
+        text-align: left;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .stay-up-to-date-form{
+        width: 440px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .stay-up-to-date-form input{
+        width: 410px;
+    }
+
+    .page-logo{
+        display: none;
+    }
+
+    .page-hero-image{
+        height: 100%;
+        flex: 4;
+    }
+
+    .page-content{
+        flex: 6;
+        margin-top: 48px;
+        background-image: url("/Saptamana2/Site-PC-Mobile/assets/images/bg-pattern-desktop.svg");
+        background-size: cover;
+    }
+
+    .desktop-page-logo{
+        display: block;
+
+    }
+
+    .page-content-wrapper{
+        width: 440px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+

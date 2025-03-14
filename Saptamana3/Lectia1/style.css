@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla';
+}
+
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--light-gray);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-container {
+  margin-top: 40px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+.join-community-container {
+  padding: 16px;
+  background-color: white;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.join-community-container h4 {
+  color: var(--cyan);
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.join-community-container p:first-of-type {
+  color: var(--bright-yellow);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.join-community-container p:last-of-type {
+  color: var(--grayish-blue);
+  line-height: 1.6;
+}
+
+.monthly-sub-container {
+  padding: 16px;
+  background-color: var(--cyan);
+}
+
+.monthly-sub-container h4 {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.monthly-sub-container div {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.monthly-sub-container div p:first-of-type {
+  color: white;
+  font-size: 32px;
+}
+
+.monthly-sub-container div p:last-of-type {
+  color: var(--light-gray);
+  opacity: 0.6;
+}
+
+.monthly-sub-container > p {
+  color: white;
+  margin-bottom: 16px;
+}
+
+.why-us-container {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: hsl(179deg, 47%, 52%);
+  padding: 16px;
+}
+
+.why-us-container h4 {
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.why-us-container ul {
+  list-style-type: none;
+}
+
+.why-us-container ul li {
+  color: white;
+  opacity: 0.75;
+  margin-bottom: 4px;
+}
+
+@media (min-width: 880px) {
+  .bottom-card-row {
+    display: flex;
+  }
+
+  .monthly-sub-container {
+    flex: 1;
+  }
+
+  .why-us-container {
+    flex: 1;
+  }
+}
