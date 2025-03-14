@@ -1,0 +1,38 @@
+.page-title {
+  text-align: center;
+}
+
+.card-container {
+  background-color: lightgray;
+  border: 1px solid gray;
+  width: 300px;
+
+  /* Daca e nevoie addaugi si display:block */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-container h4 {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.divs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-div {
+  width: 300px;
+  height: 300px;
+  background-color: blue;
+}
+
+.second-div {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
