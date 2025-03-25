@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <img class="page-logo" src="./assets/logo.svg" />
+
+      <div class="calculator-container">
+        <form>
+          <!-- Bill field -->
+          <div class="label-input-container">
+            <div class="label-container">
+              <label class="standard-label" for="amount">Bill</label>
+              <p class="standard-input-error amount-input-error">
+                Must be greater than 0
+              </p>
+            </div>
+            <div class="input-container">
+              <input
+                class="standard-input"
+                id="amount"
+                type="number"
+                name="amount"
+                placeholder="0"
+              />
+              <img class="input-icon-left" src="./assets/icon-dollar.svg" />
+            </div>
+          </div>
+
+          <!-- Tip field -->
+          <div class="tip-field-container">
+            <label class="standard-label" for="tip">Select Tip %</label>
+            <div class="tip-field-buttons">
+              <button class="tip-buttons" type="button" value="5">5%</button>
+              <button class="tip-buttons" type="button" value="10">10%</button>
+              <button class="tip-buttons" type="button" value="15">15%</button>
+              <button class="tip-buttons" type="button" value="25">25%</button>
+              <button class="tip-buttons" type="button" value="50">50%</button>
+              <input
+                class="standard-input"
+                id="tip"
+                type="number"
+                placeholder="Custom"
+              />
+            </div>
+          </div>
+
+          <!-- Number of people field -->
+          <div class="label-container">
+            <label class="standard-label" for="number-of-people"
+              >Number of People</label
+            >
+            <p class="standard-input-error amount-input-error error2">
+              Can't be zero
+            </p>
+          </div>
+          <div class="input-container nr-of-people-container">
+            <input
+              class="standard-input"
+              id="number-of-people"
+              type="number"
+              placeholder="0"
+              name="amount-people"
+            />
+            <img class="input-icon-left" src="./assets/icon-person.svg" />
+          </div>
+
+          <!-- Calculate -->
+          <button class="calculate-button" type="submit">Calculate</button>
+        </form>
+        <div class="results-container">
+          <!-- First row -->
+          <div class="results-row">
+            <div>
+              <h4 class="second-row-amount-total-text">Tip Amount</h4>
+              <p class="second-row-person-text">/ person</p>
+            </div>
+            <p class="second-row-price-text tip-amount">$0.00</p>
+          </div>
+
+          <!-- Second row -->
+          <div class="results-row">
+            <div>
+              <h4 class="second-row-amount-total-text">Total</h4>
+              <p class="second-row-person-text">/ person</p>
+            </div>
+            <p class="second-row-price-text total-amount">$0.00</p>
+          </div>
+
+          <!-- Reset button -->
+          <button class="reset-button" disabled>RESET</button>
+        </div>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
